@@ -1,12 +1,8 @@
-import { useMemo, } from 'react';
+import { useState } from 'react';
 import { CopyIcon, TrashIcon } from '../components/icons-component';
 
 export default function HomePage() {
-  const forms = useMemo(() => { return [1, 2, 3] });
-
-  const handleForm = () => {
-    window.open('/');
-  }
+  const [forms] = useState([1, 2, 3]);
 
   return (
     <div className="container-fluid p-10">

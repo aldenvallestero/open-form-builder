@@ -9,7 +9,7 @@ export default function FormPage() {
   const [fields, setFields] = useState([]);
   const [title, setTitle] = useState('');
   const [label, setLabel] = useState('');
-  const [placeholder, setPlaceholder] = useState('');
+  const [placeholder] = useState('');
 
   const addField = () => {
     if (label?.length > 0) {
